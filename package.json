@@ -1,0 +1,28 @@
+{
+  "name": "StrapTaxiApp-webDashboard",
+  "version": "4.1.1",
+  "engines": {
+    "node": ">= 8.4.0"
+  },
+  "scripts": {
+    "start": "node server",
+    "postinstall": "cd react/ && npm install",
+    "heroku-postbuild": "cd react/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "react/node_modules"
+  ],
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "keywords": [
+    "express",
+    "heroku",
+    "create-react-app",
+    "react"
+  ],
+  "devDependencies": {},
+  "author": "GeekyAnts | GeekRishabh",
+  "homepage": "https://market.nativebase.io/view/react-native-taxi-app-with-backend"
+}
